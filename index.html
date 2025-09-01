@@ -25,7 +25,30 @@
 
     </nav>
     <div class="main-container">
-        <header></header>
+        <header>
+            <h1 class="section-title page-title">Trouver votre Hébergement pour des vacances de rêve</h1>
+            <p class="page-subtitle">En plein centre-ville ou en pleine nature</p>
+        
+            <form class="search-bar" method="post" action="">
+                <label class="search-icon" for="search-location"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></label>
+                <input class="search-input" type="search" name="search-location" id="search-location" placeholder="Destination" value="Marseille, France">
+                <input class="search-cta" type="submit" value="Rechercher">
+            </form>
+
+            <div class="filter-container">
+                <h3 class="filter-title">Filtres</h3>
+                <ul class="filter-list">
+                    <li><i class="fa-solid fa-money-bill-wave"></i><p>Économique</p></li>
+                    <li><i class="fa-solid fa-person"></i><p>Familial</p></li>
+                    <li><i class="fa-solid fa-heart"></i><p>Romantique</p></li>
+                    <li><i class="fa-solid fa-fire"></i><p>Nos pépites</p></li>
+                </ul>
+            </div>
+
+            <div class="information">
+                <i class="fa-solid fa-info"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </header>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -98,7 +121,28 @@
                 </section>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <table>
+              <tr>
+                <th>À propos</th>
+                <th>Nos Hébergements</th>
+                <th>Assistance</th>
+              </tr>
+              <tr>
+                <td><a href="#">Fonctionnement du site</a></td>
+                <td><a href="#">Charte qualité</a></td>
+                <td><a href="#">Centre d'aide</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Conditions générales</a></td>
+                <td><a href="#">Proposer votre hôtel</a></td>
+                <td><a href="#">Nous contacter</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Données et confidentialité</a></td>
+              </tr>
+            </table>
+        </footer>
     </div>
 </body>
 
