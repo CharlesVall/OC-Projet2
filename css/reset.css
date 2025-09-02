@@ -17,15 +17,20 @@ html {
 * {
     margin: 0;
     overscroll-behavior: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
+
 /**
- * Remove the margin in all browsers.
+ * Center the body in all browsers.
  */
 
 body {
-  margin: 0;
+  margin: auto;
 }
 
 /**
@@ -43,7 +48,7 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -78,7 +83,9 @@ pre {
  */
 
 a {
+  color: inherit;
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -170,6 +177,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  padding: 0%;
 }
 
 /**
