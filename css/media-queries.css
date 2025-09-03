@@ -8,10 +8,17 @@
         gap: 1rem;
         text-align: left;
         flex-wrap: wrap;
+        align-items: flex-start;
+        height: auto;
     }
 
     .filter-title, .filter-list {
-        width: 100%;
+        width: 80%;
+        max-width: 40rem;
+    }
+
+    .filter-list li {
+        font-size: clamp(0.8rem, 1.6vw, 1rem);
     }
 
     .hebergements-and-populaires {
@@ -110,18 +117,34 @@
 
     .search-cta-mobile {
         display: block;
+        margin-left: -2rem;
     }
 
-    .filter-container {
+    .filter-container {   
         flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 1rem;
         width: 100%;
-        height: 9.375rem;
     }
 
     .filter-title {
-        width: 100%;
         text-align: left;
         margin-top: 1.25rem;
+    }
+
+
+    .filter-list {
+        display: grid;
+        width: 100%;
+        gap: 0.625rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding: 0;
+    }
+    
+    .filter-list li {
+        font-size: clamp(0.8rem, 4vw, 1rem);
     }
 
     .activites section {
@@ -139,17 +162,6 @@
         width: 100%;
         height: 70%;
         border-radius: 1.25rem 1.25rem 0 0;
-    }
-
-    .filter-list {
-        display: grid;
-        width: 100%;
-        gap: 0.625rem;
-        margin-top: 1.875rem;
-        margin-bottom: 1.875rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        padding: 0;
     }
 
     .information {
@@ -176,5 +188,11 @@
 
     .footer-column {
         flex: 1 1 8.125rem;
+    }
+}
+
+@media (max-width: 318px) {
+    .filter-list li {
+        font-size: clamp(0.4rem, 3.1vw, 1rem);
     }
 }
