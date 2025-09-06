@@ -178,7 +178,11 @@ header {
     justify-content: space-between;
 }
 
-.filter-list li {
+.filter-list input[type="radio"] {
+    display: none;
+}
+
+.filter-list label {
     cursor: pointer;
     display: flex;
     border: solid 0.125rem #D9D9D9;
@@ -187,14 +191,15 @@ header {
     font-size: clamp(0.8rem, 1.3vw, 1rem);
     font-weight: 700;
     border-radius: 1.5625rem;
+
 }
 
-.filter-list li:hover {
-    background-color: var(--filter-bg-color);
-}
-
-.filter-list li i {
+.filter-list label i {
     margin-right: 0.625rem;
+}
+
+.filter-list input:checked + label, .filter-list label:hover {
+    background-color: var(--filter-bg-color);
 }
 
 .fa-person {
