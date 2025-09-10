@@ -190,9 +190,3 @@
         flex: 1 1 8.125rem;
     }
 }
-
-@media (max-width: 318px) {
-    .filter-list li {
-        font-size: clamp(0.4rem, 3.1vw, 1rem);
-    }
-}

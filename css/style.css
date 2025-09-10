@@ -17,8 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 90rem;
-    gap: 1.875rem;
+    max-width: 1440px;
+    gap: 2rem;
 }
 
 .main-container {
@@ -128,6 +128,7 @@ header {
 
 .search-input:focus {
     outline: solid 0.0625rem;
+    z-index: 2;
 }
 
 .search-cta {
